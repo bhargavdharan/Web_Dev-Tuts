@@ -1,0 +1,43 @@
+.parent{
+    background-color: #e9a5f0;
+    height: 400px;
+    width: 400px;
+}
+
+.child{
+    background-color: #e93c21;
+    height: 50%;
+    width: 50%;
+}
+
+.parent:hover .child{
+    background-color: #e93c21;
+    transform: translateX(100%);
+    /* animation: myAnime 3s ease-out; */
+    animation-name: myAnime;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes myAnime {
+    0%{
+        transform: translateX(0%);
+
+    }
+
+    33%{
+        transform: translateY(100%);
+    }
+
+    66%{
+        transform: translateX(100%) translateY(100%);
+    }
+
+    100%{
+        transform: translateX(100%);
+    }
+
+}

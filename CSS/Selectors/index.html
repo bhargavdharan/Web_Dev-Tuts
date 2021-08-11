@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* universal selector */
+        *{
+            text-align: center;
+            background-color:orange;
+        }
+        h1{
+            background-color: blue;
+            color: #000;
+            font-size: 25px;
+            font-weight: bold;
+            font-family: cursive;
+        }
+        .class{
+            background-color: yellowgreen;
+            font-size: 30px;
+            font-family: sans-serif;
+            text-align: center;
+        }
+        #id{
+            background-color: aquamarine;
+            font-size: 30px;
+            text-align: center;
+        }
+        /* group selector */
+        h3, h4, p{
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background-color: bisque;
+
+        }
+    </style>
+</head>
+<body>
+    <h1> This is Element selector</h1>
+    <h2 class="class">This is Class selector</h2>
+    <h2 id="id">This is Id selector</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, repellendus!</p>
+    <h3>Lorem, ipsum dolor.</h3>
+    <h4>Lorem ipsum dolor sit.</h4>
+</body>
+</html>

@@ -1,0 +1,9 @@
+p{
+    font-size: 30px;
+    background-color: cyan;
+    /* display: inline;we cannot change height and width property */
+    /* display: inline-block;
+    height: 100px;
+    width: 300px; */
+    /* display: none; */
+}

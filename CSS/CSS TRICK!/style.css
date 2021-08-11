@@ -1,0 +1,71 @@
+/*-------------Image blend---------------------*/
+/* body{
+    background-image: url(Architech.jpeg);
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #8db5ed;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+} */
+
+/*-----------clipPath-------------------*/
+
+/* .tr{
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+    height: 60%;
+    width: 60%;
+    background-color: #8db5ed;
+    position: absolute;
+    z-index: -1;
+} */
+
+/*--------Element Animation---------*/
+
+/* @keyframes blink {
+    0%{
+        background-color: indigo;
+    }
+    20%{
+        background-color: red;
+    }
+    40%{
+        background-color: yellow;
+    }
+    60%{
+        background-color: green;
+    }
+    80%{
+        background-color: violet;
+    }
+    100%{
+        background-color: blue;
+    }
+}
+
+div{
+    height: 400px;
+    width: 400px;
+    border: 1px solid black;
+    animation: blink 10s infinite;
+    -webkit-animation: blink 10s infinite;
+} */
+
+/*--------------color gradient------------------------*/
+
+/* html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    background: rgb(215,211,139);
+background: radial-gradient(circle, rgba(215,211,139,1) 8%, rgba(247,241,101,1) 14%, rgba(207,139,82,1) 15%, rgba(172,171,189,1) 19%, rgba(11,2,1,1) 22%, rgba(126,99,18,1) 48%, rgba(186,171,85,1) 64%);
+
+} */
+
+body{
+    /* background: linear-gradient(red,green); */
+    /* background: radial-gradient ( circle,red,green,blue); */
+    background: rgb(218,240,8);
+background: radial-gradient(circle, rgba(218,240,8,1) 3%, rgba(215,211,139,1) 8%, rgba(207,139,82,1) 15%, rgba(242,208,12,1) 44%, rgba(177,148,136,1) 57%, rgba(156,139,90,1) 68%, rgba(11,2,1,1) 74%);
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyFrames || CSS</title>
+    <style type="text/css">
+
+    body{
+        padding:50px;
+    }
+
+    .box{
+        background-color: red;
+        width: 200px;
+        height: 200px;
+        position:relative;
+        display:inline-block;
+
+        animation-name: myframes;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+        animation-direction: forwards;
+        animation-play-state: running;
+    }
+
+    @keyframes myframes {
+         from{
+             top:0px;
+             height: 200px;
+             width: 200px;
+            }
+
+        45%{
+            background-color: aquamarine;
+        }
+
+         to{
+             top:100px;
+             height: 500px;
+             width: 300px;
+             background-color: pink;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

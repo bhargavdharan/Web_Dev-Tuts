@@ -1,0 +1,16 @@
+.box{
+    margin: 130px;
+    padding: 40px;
+    width:200px;
+    height: 200px;
+    background-color: #ef64e9;
+    transition-duration: 2s;
+    /* transition-property: background; */
+    transition-timing-function: ease-out;
+    transition-delay: 1s;
+}
+
+.box:hover{
+    background-color: #40ed28;
+    transform: rotate(45deg);
+}

@@ -1,0 +1,34 @@
+/*
+--------------Pseudo Classes-------------
+==> A Pseudo-class is used to define a special state of an element
+______Style an element when a user mouses over it.
+______style visited and unvisited links differently.
+______style an element when it gets focus.
+*/
+
+/*----------Hover-----------*/
+
+.box{
+    background: pink;
+    width: 200px;
+    height: 300px;
+    margin: auto;
+    font-size: 40px;
+    text-align: center;
+}
+.box:hover{
+    background: blue;
+
+}
+
+.box1{
+    background: pink;
+    width: 200px;
+    height: 300px;
+    margin: auto;
+    font-size: 40px;
+    text-align: center;
+}
+.box1:active{
+    background-color: aquamarine;
+}
