@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX intro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="heading">
+            <h4>AJAX</h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="Basics.html" >XMLHttp</a></li>
+            <li><a href="Request.html">Requests</a></li>
+
+        </ul>
+    </nav>
+    <div class="body-text">
+        <h1>The keystone of AJAX in XMLHttpRequest.</h1>
+        <ol>
+            <li>Create an XMLHttpRequest object.</li>
+            <li>Define a callback function.</li>
+            <li>Open the XMLHttpRequest.</li>
+            <li>Send the Request to a server</li>
+        </ol>
+    </div>
+    <div id="demo">
+        <h2>Let AJAX change this text</h2>
+        <button type="button" onClick="loadDoc()">change content</button>
+    </div>
+    <script>
+        function loadDoc(){
+            //create an XMLHttpRequest
+            const xhttp = new XMLHttpRequest();
+            //Define callback fn
+            xhttp.onload = function(){
+                document.getElementById("demo").innerHTML = this.responseText;
+            }
+            //open  XMLHttpRequest
+            xhttp.open("GET","info.txt",true)
+            //send a request
+            xhttp.send()
+        }
+    </script>
+</body>
+</html>

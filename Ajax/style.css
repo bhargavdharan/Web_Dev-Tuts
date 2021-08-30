@@ -1,0 +1,83 @@
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+body{
+    margin: 10px;
+    padding: 10px;
+    font-size:40px;
+    background-color: aquamarine;
+}
+h1,p{
+    margin: 5px;
+    padding: 5px;
+}
+button{
+    text-align: center;
+    margin-left: 200px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#demo{
+    padding-top:20px;
+    margin-top:20px;
+    background-color: antiquewhite;
+    line-height: 1em;
+    letter-spacing: 0.3em;
+}
+
+.body-text{
+background: lightblue;
+display: flex;
+font-family: cursive;
+align-items: center;
+justify-content: center;
+margin-top: 150px;
+}
+
+nav{
+display: flex;
+justify-content: space-around;
+align-items: center;
+min-height: 8vh;
+background-color: teal;
+}
+
+.nav-links{
+display: flex;
+justify-content: space-around;
+width: 30%;
+}
+
+.nav-links li{
+list-style: none;
+}
+
+.heading{
+color: white;
+text-transform: uppercase;
+letter-spacing: 5px;
+font-size: 20px;
+font-weight: bold;
+}
+
+.nav-links a{
+color: white;
+text-decoration: none;
+letter-spacing: 3px;
+font-weight: bold;
+font-size: 14px;
+padding: 14px 16px;
+}
+
+.nav-links li a:hover:not(.active){
+background-color: lightgreen;
+
+}
+.nav-links li a:active{
+background-color: red;
+
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX contents</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <nav>
+        <div class="heading">
+            <h4>AJAX</h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="Basics.html" >Request</a></li>
+            <li><a href="Request.html">Requests</a></li>
+
+        </ul>
+    </nav>
+    <h1>Multiple CallBack Functions.</h1>
+    <div id="demo">
+        <button onclick="loadDoc()">content</button>
+    </div>
+    <script>
+        // loadDoc("file-1.txt",myFunction1);
+        // loadDoc("file-2.txt",myFunction1);
+
+        // function loadDoc(url,myFunction){
+        //     const xhttp = new XMLHttpRequest();
+        //     xhttp.onload = function() {
+        //         document.getElementById("demo").innerHTML = myFunction(this.responseText);
+        //     }
+        //     xhttp.open("GET","file-2.txt",true);
+        //     xhttp.send();
+        // }
+
+        // function myFunction1(xhttp){
+
+        // }
+        // function myFunction2(xhttp){
+
+        // }
+
+        function loadDoc(){
+            const xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function(){
+                if(this.readyState == 4 && this.status == 200){
+                    document.getElementById("demo").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET","info.txt");
+            xhttp.send();
+        }
+    </script>
+</body>
+</html>
