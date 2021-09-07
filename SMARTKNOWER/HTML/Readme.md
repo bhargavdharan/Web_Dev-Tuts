@@ -16,7 +16,8 @@
 **Tags are 2 types:**
 
 a) opening tag  --- ```<tag>```
-a) closing tag  --- ```</tag>```
+
+b) closing tag  --- ```</tag>```
 
 ### HTML file has to be saved in '.html' extension
 
@@ -27,6 +28,7 @@ a) closing tag  --- ```</tag>```
 #### ---- self-closing tags
 
 ```<br>```  ==> break the line
+
 ```<hr>```  ==> horizontal row
 
 #### ---- Elements
@@ -40,10 +42,15 @@ a) closing tag  --- ```</tag>```
 ##### ---- Heading
 
  ---- ```<h1>HEADING1</h1>```
+
  ---- ```<h2>HEADING2</h2>```
+
  ---- ```<h3>HEADING3</h3>```
+
  ---- ```<h4>HEADING4</h4>```
+
  ---- ```<h5>HEADING5</h5>```
+ 
  ---- ```<h6>HEADING6</h6>```
 
  ---- align = "left\center\right"
