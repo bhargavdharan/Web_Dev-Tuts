@@ -17,7 +17,7 @@
 * Note that its width(```max-width```) will change on different screen sizes:
 
 
-          | Extra small <576px    | Small >= 567px    | Medium >= 768px   | Large >= 992px    | Extra large >= 1200px
-----------|-----------------------|-------------------|-------------------|-------------------|----------------------
-max-width |     100%              |     540px         |     720px         |     960px         |     1140px
+|          | Extra small <576px    | Small >= 567px    | Medium >= 768px   | Large >= 992px    | Extra large >= 1200px|
+|----------|:---------------------:|:-----------------:|:-----------------:|:-----------------:|---------------------:|
+|max-width |     100%              |     540px         |     720px         |     960px         |     1140px           |
 
