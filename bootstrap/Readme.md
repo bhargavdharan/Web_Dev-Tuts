@@ -46,3 +46,27 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 ```
+
+## jQuery and Popper ?
+
+* Bootstrap 4 use jQuery and popper.js for javascript components (like modals, tooltips, popovers etc.). However, if you just use the CSS part of bootstrap, you don't need them.
+
+## Components that require jQuery
+
+* Closable alerts
+
+* Buttons and checkboxes/radio buttons for * toggling states
+
+* Carousel for slides, controls, and indicators
+
+* Collapse for toggling content
+
+* Dropdowns (also requires Popper.js for perfect * positioning)
+
+* Modals (open and close)
+
+* Navbar (for collapsible menus)
+
+* Tooltips and popovers (also requires Popper.js * for perfect positioning)
+
+* Scrollspy for scroll behavior and navigation updates
