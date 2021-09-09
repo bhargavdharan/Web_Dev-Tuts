@@ -78,3 +78,27 @@ b) closing tag  --- ```</tag>```
 ##### ---- Hyper-Links
 
 ```<a href=" "></a>```
+
+##### ---- Tables
+
+```<table></table>```
+
+```<tr></tr>``` * table row
+
+```<td></td>``` * table data
+
+```<th></th>``` * table header
+
+* colspan Attribute  --- Merging columns
+
+* rowspan Attribute  --- Merging rows
+
+##### Forms
+
+```<form></form>```
+
+* ```<input type = "text/password/checkbox/radio/submit/reset/date/color">```
+
+* ```<select> <option></option> </select>```
+
+* ```<textarea></textarea>```
