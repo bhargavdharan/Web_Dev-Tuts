@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery || Events</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <a href="Home.html">click to go Home</a>
+
+    <p>If you click on the "hide" button, I will disappear.</p>
+    <p>If you click on the "show" button, I will appear again.</p>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    
+    <div class="container">
+        <h1>I will hide after 3s if you click me!</h1>
+        <h1>I will appear after 3s if you click me!</h1>
+        <button id="hide1">Hide</button>
+        <button id="show1">Show</button>
+    </div>
+
+    <h2>click me to hide and show elements</h2>
+    <button>click me</button>
+
+    <script>
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("p").hide();
+            });
+            $("#show").click(function(){
+                $("p").show();
+            });
+            $("#hide1").click(function(){
+                $("h1").hide(3000);
+            });
+            $("#show1").click(function(){
+                $("h1").show(3000);
+            });
+            $('button').click(function(){
+                $('h2').toggle();
+            });
+
+        });
+    </script>
+</body>
+
+</html>

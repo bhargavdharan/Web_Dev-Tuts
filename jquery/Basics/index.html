@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery || Basics</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <p>If you click me, i will disappear.</p>
+
+    <p class="p1">If you click me two times, i will disappear</p>
+
+    <br>
+
+    <p class="p2">I will work when you put mouse on me.</p>
+    
+    <br>
+
+    <p class="p3">I will work only whe u leave me</p>
+    <script>
+        $(document).ready(function(){ 
+
+            $("p").click(function(){
+                $(this).css("background-color","#cccccc")
+            });
+            $(".p1").dblclick(function(){
+                $(this).css("background-color", "orange")
+            });
+            $(".p1").on({
+                mouseenter: function(){$(this).css("background-color","lightblue")},
+                mouseleave: function(){$(this).css("background-color","lightgrey")},
+                click: function(){$(this).css("background-color", "yellow")}
+            });
+            $(".p2").mouseenter(function(){
+                alert("You entered with mouseenter() event");
+            });
+            $(".p3").mouseleave(function(){
+                alert("Bye! Buddy you leaved p3")
+            });
+        });
+    </script>
+
+</body>
+
+</html>

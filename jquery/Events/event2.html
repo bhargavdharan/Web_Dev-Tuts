@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <a href="Home.html">click to go home</a>
+    <div class="div1">
+        I am div1 i will fadeOut if you click me</div>
+        <br>
+        <button id="fadeIn"> Click me to fadeIn!</button>
+        <br>
+        <button id="fadeOut">Click me to fadeout!</button>
+    <div class="div2">
+        I am div2 i will fadeout and fadeIn if you click me 
+        <button>click me to toggle</button>
+    </div>
+    <div class="div3">
+
+    </div>
+    <script>
+        $("#fadeIn").click(function(){
+            $(".div1").fadeIn(3000);
+        })
+        $("#fadeOut").click(function(){
+            $(".div1").fadeOut(3000);
+        })
+        $('button').click(function(){
+            $(".div2").fadeToggle(3000);
+        })
+    </script>
+</body>
+</html>
