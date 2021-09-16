@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout || float</title>
+    <style>
+        h1{
+            background-color: yellow;
+            color: red;
+            font-size: 1.8em;
+            text-align: center;
+        }
+        p{
+            margin:20px;
+            font-size: 1.8em;
+        }
+        .container{
+            background-color: gold;
+            margin: 10px;
+            padding: 10px;
+        }
+        .layout-1{
+            margin:10px;
+            padding:10px;
+            background-color: grey;
+        }
+        .box{
+            width:150px;
+            height:150px;
+            text-align: center;
+            margin-right:30px;
+            background-color: aqua;
+            border:5px solid green;
+        }
+        .box1{
+            float: left;
+        }
+        .box2{
+            float: right;
+        }
+        .box3{
+            float:inherit;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS float property Layout</h1>
+    <div class="container">
+        <div class="layout-1">
+            <h1>Simple float example 1</h1>
+            <div class="box box1">Float</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, pariatur!Iste accusantium ex est repellat debitis dignissimos ut deleniti sapiente. Excepturi quaerat in reprehenderit quas explicabo molestias a ipsa, iusto suscipit fugit magni totam beatae. Officiis, consequuntur culpa mollitia nobis ullam, ratione quas eaque modi aliquid praesentium voluptatum velit adipisci totam non.</p>
+        </div>
+        <div class="layout-1">
+            <h1>Simple float example 2</h1>
+            <div class="box box2">Float</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, consequuntur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste accusantium ex est repellat debitis dignissimos ut deleniti sapiente. Excepturi quaerat in reprehenderit quas explicabo molestias a ipsa, iusto suscipit fugit magni totam beatae. Officiis, consequuntur culpa mollitia nobis ullam, ratione quas eaque modi aliquid praesentium voluptatum velit adipisci totam non.</p>
+        </div>
+        <div class="layout-1">
+            <h1>Simple float example 3</h1>
+            <div class="box box1">Float1</div>
+            <div class="box box2">Float3</div>
+            <div class="box box2">Float2</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, consequuntur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste accusantium ex est repellat debitis dignissimos ut deleniti sapiente. Excepturi quaerat in reprehenderit quas explicabo molestias a ipsa, iusto suscipit fugit magni totam beatae. Officiis, consequuntur culpa mollitia nobis ullam, ratione quas eaque modi aliquid praesentium voluptatum velit adipisci totam non.</p>
+        </div>
+        <div class="layout-1">
+            <h1>Simple float example 4</h1>
+            <div class="box box1">Float1</div>
+            <div class="box box1">Float2</div>
+            <div class="box box2">Float3</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, consequuntur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste accusantium ex est repellat debitis dignissimos ut deleniti sapiente. Excepturi quaerat in reprehenderit quas explicabo molestias a ipsa, iusto suscipit fugit magni totam beatae. Officiis, consequuntur culpa mollitia nobis ullam, ratione quas eaque modi aliquid praesentium voluptatum velit adipisci totam non.</p>
+        </div>
+
+    </div>
+</body>
+</html>

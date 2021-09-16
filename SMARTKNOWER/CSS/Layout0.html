@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layouts</title>
+    <style>
+        body{
+            width:500px;
+            margin:0px auto;
+        }
+        h1{
+            color:red;
+            background-color: yellow;
+            font-size: 1.5em;
+        }
+        p{
+            margin:15px;
+            padding:20px;
+            font-family:cursive;
+            border:2px solid black;
+        }
+        ul,li{
+            list-style:none;
+            margin:10px;
+        }
+        .layout1 p{
+            background-color: firebrick;
+        }
+        .layout2 p{
+            background-color: firebrick;
+        }
+        span{
+            background-color: white;
+            border:2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout1">
+        <h1>Normal flow layout</h1>
+        <p>I love my cat.</p>
+        <ul>
+            <li>Buy cat food</li>
+            <li>Exercise</li>
+            <li>Cheer up friend</li>
+        </ul>
+        <p>The end!</p>
+    </div>
+    <div class="layout2">
+        <h1>Basic Document flow</h1>
+        <p>I am a basic block level element. My adjacent block level elements sit on new lines below me.</p>
+        
+        <p>By default we span 100% of the width of our parent element, and we are as tall as our child content. Our total width
+            and height is our content + padding + border width/height.</p>
+        
+        <p>We are separated by our margins. Because of margin collapsing, we are separated by the width of one of our margins,
+            not both.</p>
+        
+        <p>inline elements <span>like this one</span> and <span>this one</span> sit on the same line along with adjacent text
+            nodes, if there is space on the same line. Overflowing inline elements will <span>wrap onto a new line if possible
+                (like this one containing text)</span>, or just go on to a new line if not, much like this image will do: <img
+                src="image.jpeg"></p>
+    </div>
+</body>
+</html>

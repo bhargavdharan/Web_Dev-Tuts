@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout || Positioning</title>
+    <style>
+        body{
+            width:800px;
+            margin:0 auto;
+        }
+        h1{
+            background-color: yellow;
+            color:red;
+            text-align:center;
+            font-size:1.8em;
+        }
+
+        .positioning{
+           background: antiquewhite;
+           margin:20px;
+           padding:20px;
+        }
+
+        .technique{
+            background-color: whitesmoke;
+            margin:25px;
+            padding:40px;
+        }
+        .positioned-relative{
+            position: relative;
+            background: coral;
+            border: 2px solid black;
+            top:30px;
+            left:30px;
+        }
+        .positioned-absolute{
+            position: absolute;
+            background: coral;
+            border: 2px solid black;
+            top:30px;
+            left:30px;
+        }
+        .positioned-Fixed{
+            position: fixed;
+            background: coral;
+            border: 2px solid black;
+            top:30px;
+            left:30px;
+        }
+        .positioned-Sticky{
+            position: sticky;
+            background: coral;
+            border: 2px solid black;
+            top:30px;
+            left:30px;
+        }
+        p{
+            background-color: goldenrod;
+            border:5px solid red;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Positioning techniques</h1>
+    <div class="positioning">
+        <div class="technique">
+            <h1>Simple positioning</h1>
+            <p>I am simple block level element</p>
+            <p class="positioned simple">I am a simple block level element</p>
+            <p>I am simple block level element</p>
+        </div>
+        <div class="technique">
+            <h1>Relative positioning</h1>
+            <p>I am simple block level element</p>
+            <p class="positioned-relative">I am a simple block level element</p>
+            <p>I am simple block level element</p>
+        </div>
+        <div class="technique">
+            <h1>Absolute positioning</h1>
+            <p>I am simple block level element</p>
+            <p class="positioned-absolute">I am a simple block level element</p>
+            <p>I am simple block level element</p>
+        </div>
+        <div class="technique">
+            <h1>Fixed positioning</h1>
+            <div class="positioned-Fixed">Fixed</div>
+            <p>Paragraph 1</p>
+            <p>Paragraph 2</p>
+            <p>Paragraph 3</p>
+        </div>
+        <div class="technique">
+            <h1>Sticky positioning</h1>
+            <div class="positioned-Sticky">I am a simple block level element</div>
+            <p>I am simple block level element. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, quasi necessitatibus modi rem velit ipsam est minus aut. Quae accusantium dolorem quos molestias quisquam nesciunt?</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+
+        .element{
+            padding:5em;
+            color:white;
+            text-align: center;
+            font-size: 5em;
+            animation-name: pulse;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes pulse{
+            0%{
+                background-color:#001f3f;
+            }
+            25%{
+                background-color: grey;
+            }
+            50%{
+                background-color: coral;
+            }
+            100%{
+                background-color: #ff4136;
+            }
+        }
+
+        html,body,div{
+            height: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="element">pulse animation</div>
+</body>
+</html>

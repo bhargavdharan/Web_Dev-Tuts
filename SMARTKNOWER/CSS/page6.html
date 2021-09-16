@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web development course || Animation </title>
+    <style>
+        a{
+            text-decoration:none;
+            margin:30px;
+            background-color: yellow;
+            font-size: 1.5em;
+        }
+
+        p {
+            animation-name: TagAnime;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes TagAnime{
+            form{
+                margin: 100%;
+                padding:50%;
+                width:100%;
+            }
+
+            to{
+                margin: 0%;
+                width:20%;
+            }
+        }
+
+        #box1 {
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            background-color: skyblue;
+            animation-name: anime1;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-iteration-count: 3;
+            animation-direction: reverse;
+            animation-fill-mode: forwards;
+            animation-timing-function: linear;
+        }
+        #box2 {
+            width: 200px;
+            height: 200px;
+            margin:30px;
+            background-color: skyblue;
+            animation-name: anime2;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease;
+        }
+
+        @keyframes anime1 {
+
+            /*
+            from{
+                background-color:yellow;
+            }*/
+            /*
+            to{
+                background-color:blue;
+            }*/
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: yellow;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
+        @keyframes anime2 {
+
+            0% {
+                background-color: orange;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: yellow;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: brown;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="index.html">Home</a>
+    <a href="example1.html">Animation Example1</a>
+    <a href="example2.html">Animation Example2</a>
+    <p>Lorem, ipsum dolor.</p>
+    <p>The Caterpillar and Alice looked at each other for some time in silence:
+        at last the Caterpillar took the hookah out of its mouth, and addressed
+        her in a languid, sleepy voice.</p>
+
+    <div id="box1">Box1</div>
+    <div id="box2">Box2</div>
+    <div id="box3">Box3</div>
+</body>
+
+</html>
