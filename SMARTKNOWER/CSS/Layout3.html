@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        h1 {
+            color:white;
+            text-align:center;
+            font-size:2.5em;
+        }
+
+        header{
+            background-color:purple;
+            height: 100%;
+        }
         .wrapper{
             display: flex;
         }
@@ -17,9 +27,42 @@
             font-weight: bold;
             font-size: 1.5em;
             color: #000;
-            padding:5px;
+            padding:10px;
+            margin:10px;
             border-radius:5px;
         }
+
+       .layout-1{
+           display: flex;
+       }
+
+       .layout-2{
+           display: flex;
+           flex-wrap: wrap;
+           flex-direction: row;
+       }
+       .box-1{
+             flex:200px;
+             flex-flow: row wrap;
+             flex:1;
+       }
+       .box-1:nth-of-type(odd){
+           flex:2 200px;
+       }
+
+       .buttons{
+           display: flex;
+           align-items: center;
+           justify-content: space-around;
+        }
+
+        button:first-child{
+           align-self: flex-end;
+           order: 1;
+       }
+       button:last-child{
+           order: -1;
+       }
     </style>
 </head>
 <body>
@@ -28,5 +71,78 @@
         <div class="box">Two</div>
         <div class="box">Three</div>
     </div>
+
+    <header>
+        <h1>Sample FlexBox Example</h1>
+    </header>
+
+    <div class="buttons">
+        <button>Smile</button>
+        <button>Laugh</button>
+        <button>Wink</button>
+        <button>Shrug</button>
+        <button>Blush</button>
+    </div>
+
+    <section class="layout-0">
+        <div class="box">
+            <h2>First article</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam assumenda, architecto tempora provident quasi, dolores harum ea nisi recusandae commodi nihil ex perferendis vitae sapiente id dolorem asperiores tenetur animi itaque quae excepturi est, libero accusamus fugiat. Tempore, non itaque!</p>
+        </div>
+        <div class="box">
+            <h2>Second article</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, distinctio! Dolorum aspernatur delectus ullam labore deserunt sint numquam iusto commodi repudiandae? Eos totam sapiente exercitationem velit accusamus, fugit natus atque quod voluptas ab tempore omnis ratione aspernatur illo, libero dolorum.</p>
+        </div>
+        <div class="box">
+            <h2>Third article</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate minus molestias sint tempora fugiat dignissimos vero quas architecto cupiditate unde repellat necessitatibus doloremque provident maxime temporibus hic, delectus dolore odio ea corrupti labore dolorem quibusdam. Neque vitae voluptas molestias laboriosam?</p>
+        </div>
+    </section>
+
+    <section class="layout-1">
+        <div class="box">
+            <h2>First article</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam assumenda, architecto tempora provident quasi, dolores harum ea nisi recusandae commodi nihil ex perferendis vitae sapiente id dolorem asperiores tenetur animi itaque quae excepturi est, libero accusamus fugiat. Tempore, non itaque!</p>
+        </div>
+        <div class="box">
+            <h2>Second article</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, distinctio! Dolorum aspernatur delectus ullam labore deserunt sint numquam iusto commodi repudiandae? Eos totam sapiente exercitationem velit accusamus, fugit natus atque quod voluptas ab tempore omnis ratione aspernatur illo, libero dolorum.</p>
+        </div>
+        <div class="box">
+            <h2>Third article</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate minus molestias sint tempora fugiat dignissimos vero quas architecto cupiditate unde repellat necessitatibus doloremque provident maxime temporibus hic, delectus dolore odio ea corrupti labore dolorem quibusdam. Neque vitae voluptas molestias laboriosam?</p>
+        </div>
+    </section>
+
+    <section class="layout-2">
+        <div class="box box-1">
+            <h2>First article</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam assumenda, architecto tempora provident quasi, dolores harum ea nisi recusandae commodi nihil ex perferendis vitae sapiente id dolorem asperiores tenetur animi itaque quae excepturi est, libero accusamus fugiat. Tempore, non itaque!</p>
+        </div>
+        <div class="box box-1">
+            <h2>Second article</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, distinctio! Dolorum aspernatur delectus ullam labore deserunt sint numquam iusto commodi repudiandae? Eos totam sapiente exercitationem velit accusamus, fugit natus atque quod voluptas ab tempore omnis ratione aspernatur illo, libero dolorum.</p>
+        </div>
+        <div class="box box-1">
+            <h2>Third article</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate minus molestias sint tempora fugiat dignissimos vero quas architecto cupiditate unde repellat necessitatibus doloremque provident maxime temporibus hic, delectus dolore odio ea corrupti labore dolorem quibusdam. Neque vitae voluptas molestias laboriosam?</p>
+        </div>
+        <div class="box box-1">
+            <h2>Fourth article</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate minus molestias sint tempora fugiat dignissimos vero quas architecto cupiditate unde repellat necessitatibus doloremque provident maxime temporibus hic, delectus dolore odio ea corrupti labore dolorem quibusdam. Neque vitae voluptas molestias laboriosam?</p>
+        </div>
+        <div class="box box-1">
+            <h2>Fifth article</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate minus molestias sint tempora fugiat dignissimos vero quas architecto cupiditate unde repellat necessitatibus doloremque provident maxime temporibus hic, delectus dolore odio ea corrupti labore dolorem quibusdam. Neque vitae voluptas molestias laboriosam?</p>
+        </div>
+        <div class="box box-1">
+            <h2>Sixth article</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate minus molestias sint tempora fugiat dignissimos vero quas architecto cupiditate unde repellat necessitatibus doloremque provident maxime temporibus hic, delectus dolore odio ea corrupti labore dolorem quibusdam. Neque vitae voluptas molestias laboriosam?</p>
+        </div>
+        <div class="box box-1">
+            <h2>Seventh article</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate minus molestias sint tempora fugiat dignissimos vero quas architecto cupiditate unde repellat necessitatibus doloremque provident maxime temporibus hic, delectus dolore odio ea corrupti labore dolorem quibusdam. Neque vitae voluptas molestias laboriosam?</p>
+        </div>
+    </section>
 </body>
 </html>
