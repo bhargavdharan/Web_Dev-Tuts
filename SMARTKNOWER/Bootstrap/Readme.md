@@ -76,25 +76,25 @@
 
 ## 2. Background Classes
 
-* ```.bg-primary``
+* ```.bg-primary```
 
-* ```.bg-success``
+* ```.bg-success```
 
-* ```.bg-info``
+* ```.bg-info```
 
-* ```.bg-warning``
+* ```.bg-warning```
 
-* ```.bg-danger``
+* ```.bg-danger```
 
-* ```.bg-secondary``
+* ```.bg-secondary```
 
-* ```.bg-dark``
+* ```.bg-dark```
 
-* ```.bg-light``
+* ```.bg-light```
 
-* ```.bg-``
+* ```.bg-```
 
-* ```.bg-``
+* ```.bg-```
 
 ## 3. Image classes
 
@@ -103,3 +103,91 @@
 * ```.img-fluid```
 
 * ```.mx-auto d-block```
+
+## 4. Button classes
+
+* ```.btn```
+
+* ```.btn-primary```
+
+* ```.btn-success```
+
+* ```.btn-info```
+
+* ```.btn-warning```
+
+* ```.btn-danger```
+
+* ```.btn-link```
+
+* ```.btn-dark```
+
+* ```.btn-light```
+
+* ```.btn-lg```
+
+* ```.btn-sm```
+
+## 5.  Alert Classes
+
+* ```.alert```
+
+* ```.alert-success```
+
+* ```.alert-danger```
+
+* ```.alert-info```
+
+* ```.alert-warning```
+
+* ```.alert-light```
+
+* ```.alert-dark```
+
+* ```.alert-dismissable```
+
+* ```.close```
+
+* ```data-dismiss="alert"```
+
+## 5. Collapse
+
+* ```data-bs-toggle="collapse"```
+
+* ```data-bs-target="#para"```
+
+## 6. Grid-model
+
+* ```.container/.container-fluid```
+
+* ```.row```
+
+* ```.col-md-12```
+
+## 7. Navigation
+
+* ```nav```
+
+* ```nav-item```
+
+* ```nav-link```
+
+* ```nav-link active```
+
+* ```nav-link disabled```
+
+* ```navbar```
+
+* ```navbar-expand-md```
+
+* ```bg-dark```
+
+* ```navbar-dark```
+
+* ```navbar-brand```
+
+* ```navbar-nav``` --> for ul
+
+* ```navbar-nav-item``` --> for li
+
+* ```navbar-nav-link``` --> for ul
