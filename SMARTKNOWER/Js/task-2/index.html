@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web development course</title>
+    <style>
+        h1 {
+            background-color: yellow;
+            color: red;
+        }
+
+        .container {
+            margin: 5px;
+            padding: 5px;
+            background-color: orange;
+            color: #000;
+            width: 600px;
+            height: 250px;
+        }
+
+        .tbody {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Salary Slip</h1>
+
+        <h3> between 30000 to 40000 tax 5%</h3>
+        <h3> between 40000 to 50000 tax 8%</h3>
+        <h3> above 50000 tax 10%</h3>
+    </div>
+
+    <table border="1" align="center" width="100%">
+        <thead>
+            <th>Salary</th>
+            <th>Tax-Amount</th>
+            <th>Hand-Salary</th>
+        </thead>
+        <tbody class="tbody">
+            <td id="salary"></td>
+            <td id="tax"></td>
+            <td id="hSalary"></td>
+
+        </tbody>
+
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>

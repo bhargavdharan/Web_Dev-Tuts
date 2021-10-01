@@ -18,3 +18,8 @@ document.write("Javascript is basically client side programming If we want JS as
 
 document.write("</h4>");
 
+alert("Welcome to Javascript");
+
+prompt("Enter your name:");
+
+confirm("Are you sure ?");

@@ -30,3 +30,85 @@
 * line of code is called statement
 
 * each statement should end with semicolon(;)
+
+## Pop-up Boxes
+
+* alert()
+
+* prompt()
+
+* confirm()
+
+## comments in javascript
+
+1. Single line comments -- (//)
+2. Multi line comments  -- (/*line of code*/)
+
+## VARIABLES
+
+* It is a container to store values.
+
+* Variables are memory locations.
+
+```a=10``` , ```b=30``` , ```pm="modi"``` , ```_a=20```
+
+* var,let,const are reserve keywords to declare variables.
+
+```var variable_name;``` // declaring a variable
+
+```variable_name=value;``` // assigning a variable
+
+* variables is used by using data-types
+
+1. Number
+2. Strings
+3. Boolean
+4. Float
+5. Null
+6. Undefined
+7. Arrays
+8. Object
+
+* **Concatenation** -- 
+
+1. It is used for adding 2 0r more strings
+
+2. '+' is used as symbol for concatenation
+
+* **Date() function** --
+
+* Date()
+
+## Operators
+
+1. assignment operators -- (=)
+
+2. arithematic operators -- (+,-,*,%)
+
+3. conditional operators -- (<=,>=,>,<,!=)
+
+4. logical operators -- (&& and ,|| or)
+
+## Conditions
+
+* if-else condition
+
+```if-else
+if(condition){
+    statement
+}else{
+    statement
+}
+```
+
+* if-else if condition
+
+```if-else if
+if{
+    statement1;
+}else if{
+    statement2;
+}else{
+    statement3;
+}
+```
