@@ -112,3 +112,39 @@ if{
     statement3;
 }
 ```
+
+## Loops
+
+* for-loop  --- it is a repetition control structure that allows
+
+```for-loop
+for(i=0;i<=n;i++){
+    // statement
+}
+```
+
+* while-loop ---
+
+## functions
+
+* functions (also called 'procedures' in some programming languages and 'methods' in most object oriented programming languages) are a set of instructions bundled together to achieve a specific outcome. Functions are a good alternative to having repeating blocks of code in program.
+
+### function with parameters
+
+* A parameter is a named variable passed into a function.
+
+Parameter:
+
+* Function parameters are the names listed in the functions definition
+* Function arguments are the real values passed to the function.
+* Parameters are initialized to the values of the argument supplied.
+
+## Events
+
+* OnClick
+
+* OnMouseOver
+
+* OnMouseOut
+
+* OnSelect
