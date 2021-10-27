@@ -102,3 +102,42 @@ To stop the server
 --- if you are sending down an text file to the client, you should set the Content-Type to text/plain
 
 --- if you are sending down an text file to the client, you should set the Content-Type to text/html
+
+## File system
+
+* The Node.js file system module allows you to work with the file system on your computer.
+* To include the file system module, use the require() method: ```var fs = require('fs');```
+* Node.js as a file server
+
+1. Read files
+2. Create files
+3. Update files -- we use **appendFile** to update file
+4. Delete files -- we use **unlink** to delete the file
+5. Rename files
+
+## EXPRESSJS
+
+* Express-js is a framework for nodejs
+* We install Express library by using npm install express --save command
+* Express contains get and post methods
+* Routes definition takes the following structure:
+```app.METHOD(PATH,HANDLER);```
+    -- app is an instance of express
+    -- METHOD is an HTTP request method in lowercase
+    -- PATH is a path on the server
+    -- HANDLER is the function executed when the route is matched
+* Nodemon library is useful to restart our node application without any interruptions.
+```npm install -g nodemon```
+
+* **Middleware in Express-js**
+
+-- Middleware functions are functions that have access to the request object(req), the response object(res), and the next function in the application's request-response cycle.The next function is a function in the express router which,when invoked,executes the middleware succeeding the current middleware.
+
+-- Middleware functions can perform the following tasks:
+
+1. execute any code.
+2. Make changes to the request and the response object.
+3. End the request-response cycle.
+4. call the next middleware in the stack
+
+-- if the current middleware function does not end the request-response cycle, it must call next() to pass the control to the next middleware.Otherwise, the request will be left hanging.

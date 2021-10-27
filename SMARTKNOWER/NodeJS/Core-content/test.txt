@@ -1,0 +1,1 @@
+This is a text file.....Welcome aboard!! Learning file system module in nodejs
