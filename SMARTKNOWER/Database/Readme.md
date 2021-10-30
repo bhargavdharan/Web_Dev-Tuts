@@ -58,7 +58,7 @@ Here are important reasons for using SQL
 - SQL offers you to use the function in a database, create a view, and stored procedure.
 - you can set permissions on tables, procedures , and views
 
-![Image](SQL.png)
+- ![Image](SQL.png)
 
 - **Types of SQL Statements**
 
