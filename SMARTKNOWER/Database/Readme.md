@@ -127,3 +127,76 @@ CREATE DATABASE creates a new database, assuming the user running the command ha
 - **CREATE TABLE**
 
 CREATE TABLE creates a new table inside a database. The terms int and varchar(255) in this example specify the datatypes of the columns we're creating
+
+```query2
+CREATE TABLE customers(
+    customer_id int(100),
+    customer_name varchar(255)
+)
+```
+
+- **INSERT DATA**
+
+```INSERT INTO tb1(sno, name, address) VALUES (1, 'SURESH', 'DELHI');```
+
+- **DROP**
+
+DROP statement can be used to delete entire databases,tables or indexes.
+It goes without saying that the DROP command should only be used where absolutely necessary.
+
+- **DROP DATABASE**
+
+DROP DATABASE deletes the entire database including all of its tables, indexes etc as well as all the data within it.
+
+Again, this is a command we want to be very, very careful about using
+```DROP DATABASE dataquestDB```
+
+- **DROP TABLE**
+
+DROP TABLE deletes a table as well as the data within it
+
+```DROP TABLE customers```
+
+- **UPDATE**
+
+The UPDATE statement is used to update data in a table.
+For example, the code below would update age of any customer named Bob in the customers table to 56
+
+```UPDATE customers SET age=56  WHERE name='Bob';```
+
+- **DELETE**
+
+DELETE can remove all rows from a table(using *), or can be used as part of a WHERE clause to delete rows that meet a specific condition
+
+```DELETE FROM customers WHERE name = 'Bob'```
+
+- **ALTER**
+
+ALTER TABLE allows you to add or remove columns from a table.In the code snippets below, we'll add and then remove a column for surname.The text varchar(255) specifies the datatype of the column
+
+```ALTER TABLE customers ADD surname varchar(255);```
+
+```ALTER TABLE customers FROM COLUMN surname;```
+
+- **AGGREGATE FUNCTIONS(COUNT/SUM/AVG/MIN/MAX)**
+
+An aggregate function performs a calculation on a set of values and returns a single result
+
+- **COUNT**
+
+COUNT returns the number of rows that match the specified criteria. In the code below, we're using *, so the total row count for customers would be returned
+
+```SELECT COUNT(*) FROM customers;```
+
+- **SUM**
+
+SUM returns the total sum of a numeric column
+
+```SELECT SUM(age) FROM customers;```
+
+- **AVG**
+
+- **MIN**
+
+- **MAX**
+
