@@ -1,0 +1,69 @@
+$tColor1: white;
+$tColor2: black;
+$color1: yellow;
+$color2: red;
+$color3: blue;
+
+
+@mixin test() {
+    margin: 20px;
+    padding: 20px;
+    font-size: 2.5em;
+    color: $tColor2;
+    border-radius: 20px;
+    border: 5px dashed black;
+}
+
+
+h1{
+    color: red;
+    background-color: $color1;
+}
+
+h2{
+    color: $color1;
+    background-color: $color2;
+}
+
+nav{
+
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    li{
+        display: inline-block;
+        font-size: 1.4em;
+    }
+
+    a{
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+    }
+
+
+}
+
+#one{
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    background-color: $color3;
+    @include test();
+}
+
+#two{
+    height: 150px;
+    text-align: center;
+    background-color: $color2;
+    @include test();
+}
+
+#three{
+    text-align: center;
+    background-color: $color1;
+    @include test();
+}

@@ -5,16 +5,59 @@
     "Arunachal",
     "Bharath",
     "BIHER",
+    "Chaithanya",
+    "dataquest",
     "datatypes",
+    "dbase",
     "EXPRESSJS",
     "Himachal",
     "Madhya",
     "Martson",
     "Michaels",
+    "myclr",
+    "mypassword",
     "organising",
     "RDBMS",
     "redeclared",
     "subqueries"
   ],
-  "excalidraw.theme": "auto"
+  "excalidraw.theme": "auto",
+  "sqltools.connections": [
+    {
+      "mysqlOptions": {
+        "authProtocol": "default"
+      },
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 3306,
+      "driver": "MySQL",
+      "name": "myFirst Connection",
+      "database": "myFirstDB",
+      "username": "don",
+      "password": "Password123#@!"
+    },
+    {
+      "mysqlOptions": {
+        "authProtocol": "default"
+      },
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 3306,
+      "driver": "MySQL",
+      "name": "mySecondConnection",
+      "database": "acme",
+      "username": "don",
+      "password": "Password123#@!"
+    },
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "postgreSQL",
+      "database": "TestDB",
+      "username": "postgres",
+      "password": "mypassword"
+    }
+  ]
 }
