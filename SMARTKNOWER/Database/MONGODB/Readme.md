@@ -33,4 +33,4 @@ Joins have huge performance impact as it requires lot of CPU and resources
 
 ## Comparison between SQL and MongoDB
 
-![image][Image-2.png]
+![image](Image-2.png)
