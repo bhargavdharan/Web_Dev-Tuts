@@ -3,6 +3,8 @@ $tColor2: black;
 $color1: yellow;
 $color2: red;
 $color3: blue;
+$bgColor1: skyblue;
+$bgColor2: yellow;
 
 
 @mixin test() {
@@ -12,6 +14,10 @@ $color3: blue;
     color: $tColor2;
     border-radius: 20px;
     border: 5px dashed black;
+}
+
+body{
+    background-color: $bgColor1;
 }
 
 
